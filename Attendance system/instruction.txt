@@ -1,0 +1,51 @@
+1st execute:
+
+attendance_app.py : It is used for face recognition through the camera
+
+2nd execute:
+
+for.py : it is used update the csv file to excel sheet
+
+3rd execute:
+
+report_tool.py : it is used to write query and get the answer 
+
+ex:
+query :
+C:\Users\Neeraj\Desktop\face detect gem>
+py report_tool.py  when did neeraj enter today
+
+answer :
+
+C:\Users\Neeraj\Desktop\face detect gem\report_tool.py:28: UserWarning: Parsing dates in %d-%m-%Y %H:%M format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+Interpreting query: Person=Neeraj, Action=LOGS, Date=2025-12-31
+
+✅ Query Result: Log entries found for Neeraj on 2025-12-31:
+- 2025-12-31 | EXIT    recorded at 10:52:00
+- 2025-12-31 | ENTRY   recorded at 10:52:00
+- 2025-12-31 | EXIT    recorded at 10:52:00
+- 2025-12-31 | ENTRY   recorded at 10:53:00
+- 2025-12-31 | EXIT    recorded at 10:53:00
+- 2025-12-31 | ENTRY   recorded at 10:53:00
+
+query 2:
+C:\Users\Neeraj\Desktop\face detect gem>py report_tool.py how many times neeraj enter today
+
+answer 2:
+C:\Users\Neeraj\Desktop\face detect gem\report_tool.py:28: UserWarning: Parsing dates in %d-%m-%Y %H:%M format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+Interpreting query: Person=Neeraj, Action=ENTRY, Date=2025-12-31
+✅ Query Result: Neeraj came to the office 3 time(s) on 2025-12-31.
+
+query 3:
+C:\Users\Neeraj\Desktop\face detect gem>py report_tool.py how many times neeraj exit today 
+
+answer 3:
+C:\Users\Neeraj\Desktop\face detect gem\report_tool.py:28: UserWarning: Parsing dates in %d-%m-%Y %H:%M format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+Interpreting query: Person=Neeraj, Action=EXIT, Date=2025-12-31
+✅ Query Result: Neeraj left the office 3 time(s) on 2025-12-31.
+
+
+ 

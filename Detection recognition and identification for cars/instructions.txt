@@ -1,0 +1,9 @@
+
+i>for cars detection : yolov8m.pt is used for common cars
+
+ii>for cars recognition: bestR.pt is used to detect the car from car's logo(brand of the car)
+ and i have trained for the brand called  Toyota
+
+iii>for car identification: bestI.pt is used to detect the car from the car's logo(brand of the car),
+design pattern of that car and i have trained the model for Toyota brand in that 
+only innova and fortuner are the two type of cars
